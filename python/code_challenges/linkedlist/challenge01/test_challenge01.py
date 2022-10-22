@@ -17,3 +17,12 @@ def test_delete_5():
     expected = [4,1,9]
     actual = llist.printAll()
     assert actual == expected
+
+
+def test_empty():
+    llist = LinkedList()
+
+    expected = "The linked list is empty"
+    actual = llist.printAll()
+
+    assert actual ==expected
