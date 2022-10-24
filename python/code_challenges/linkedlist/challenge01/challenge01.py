@@ -1,13 +1,16 @@
 class Node:
-     def __init__(self, x):
+    '''This is a class to define nodes'''
+    def __init__(self, x):
          self.val = x
          self.next = None
 
 class LinkedList:
+    '''This is class to create linked list methods'''
     def __init__(self):
         self.head = None
 
     def append(self, node):
+        '''This method is made to accept nodes and append them to the the linked list'''
         if self.head is None:
             self.head = node
         else:
@@ -16,15 +19,10 @@ class LinkedList:
                 current = current.next
             current.next = node
     
-    def deleteNode(self, node):
- 
-        if not node:
-            return
-        
-        node.val = node.next.val
-        node.next = node.next.next
+
     
     def printAll(self):
+        '''this is a method to print the linked list values inside of a list'''
         elements=[]
         if self.head is None:
             return("The linked list is empty")
@@ -35,7 +33,13 @@ class LinkedList:
                 current = current.next
             return elements
                 
-
+def deleteNode(node):
+ 
+    if not node:
+        return
+        
+    node.val = node.next.val
+    node.next = node.next.next
 
 llist = LinkedList()
 node1 = Node(4)
@@ -52,6 +56,6 @@ llist.append(node4)
 
 print(llist.printAll())
 
-llist.deleteNode(node3)
+deleteNode(node3)
 print(llist.printAll())
 

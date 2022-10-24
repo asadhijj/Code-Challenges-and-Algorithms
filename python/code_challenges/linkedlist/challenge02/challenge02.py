@@ -1,13 +1,16 @@
 class Node:
-     def __init__(self, x):
+    '''This is a class to define nodes'''
+    def __init__(self, x):
          self.val = x
          self.next = None
 
 class LinkedList:
+    '''This is class to create linked list methods'''
     def __init__(self):
         self.head = None
 
     def append(self, node):
+        '''This method is made to accept nodes and append them to the the linked list'''
         if self.head is None:
             self.head = node
         else:
@@ -18,6 +21,9 @@ class LinkedList:
     
     
     def middleNode(self):
+        '''this is a method to find the middle node and takes in consideration the even numbers of nodes and odd numbers
+        it iterates through the list using two pointers, one pointer to run to the end value,
+        and the other pointer to catch the middle node when the first node reaches the end value'''
         pointer = self.head
         mid_node = self.head
         while ( pointer ) :
@@ -28,6 +34,7 @@ class LinkedList:
         return mid_node.val 
     
     def printAll(self):
+        '''this is a method to print the linked list values inside of a list'''
         elements=[]
         if self.head is None:
             return("The linked list is empty")
@@ -40,6 +47,8 @@ class LinkedList:
                 
 
 def deleteNode(node):
+    '''This function is made to delete nodes accessing only the node and takes in consideration
+    that the node is not a tail node'''
  
     if not node:
         return

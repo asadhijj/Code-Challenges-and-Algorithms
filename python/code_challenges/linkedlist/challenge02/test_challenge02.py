@@ -3,6 +3,7 @@ from challenge02 import *
 
 
 def test_middle_node_even():
+    '''A test to see if the middle node method is working for even number of nodes'''
     llist = LinkedList()
     node1 = Node(4)
     node2 = Node(9)
@@ -22,6 +23,7 @@ def test_middle_node_even():
     assert actual == expected
 
 def test_middle_node_odd():
+    '''A test to see if the middle node method is working for odd number of nodes'''
     llist = LinkedList()
     node1 = Node(4)
     node2 = Node(9)
@@ -40,6 +42,7 @@ def test_middle_node_odd():
 
     
 def test_empty():
+    '''a test to see if the error message works in case there is no nodes in the linked list'''
     llist = LinkedList()
 
     expected = "The linked list is empty"

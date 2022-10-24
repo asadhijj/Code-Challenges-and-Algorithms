@@ -3,6 +3,7 @@ from challenge01 import *
 
 
 def test_delete_5():
+    '''A test to check if the deleting node function is working'''
     llist = LinkedList()
     node1 = Node(4)
     node2 = Node(5)
@@ -12,7 +13,7 @@ def test_delete_5():
     llist.append(node2)
     llist.append(node3)
     llist.append(node4)
-    llist.deleteNode(node2)
+    deleteNode(node2)
 
     expected = [4,1,9]
     actual = llist.printAll()
@@ -20,6 +21,8 @@ def test_delete_5():
 
 
 def test_empty():
+    '''a test to see if the error message works in case there is no nodes in the linked list'''
+
     llist = LinkedList()
 
     expected = "The linked list is empty"
