@@ -6,7 +6,9 @@ class TreeNode:
         self.right = right
 
 class TreeBuilder :
-    
+    '''Building A Tree using a stack to save the root and then 
+    iterate through the preorder to compare values of preorder and inorder
+    to append them to left subtree and right subtree'''
     def buildTree(self, preorder, inorder) :
         if not preorder:
             return None
