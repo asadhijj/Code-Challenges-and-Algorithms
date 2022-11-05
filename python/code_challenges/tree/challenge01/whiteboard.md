@@ -4,4 +4,4 @@
 
 ## Here is the White Board for the challenge 
 
-![WhiteBoard CC5](ww6.jpg)
+![WhiteBoard CC6](ww6.jpg)
