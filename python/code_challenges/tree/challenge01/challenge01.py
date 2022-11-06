@@ -10,8 +10,8 @@ class TreeBuilder :
     iterate through the preorder to compare values of preorder and inorder
     to append them to left subtree and right subtree'''
     def buildTree(self, preorder, inorder) :
-        if not preorder:
-            return None
+        if len(preorder)==0 or  len(inorder)==0:
+            return "This Tree is empty"
 
         root = TreeNode(preorder[0])
         stack = [root]
