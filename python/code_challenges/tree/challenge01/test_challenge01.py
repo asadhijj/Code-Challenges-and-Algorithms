@@ -21,3 +21,7 @@ def test_build_tree3():
     assert tree.buildTree([1,2,3],[2,1,3]).val == 1
     assert tree.buildTree([1,2,3],[2,1,3]).left.val == 2
     assert tree.buildTree([1,2,3],[2,1,3]).right.val == 3
+
+def test_empty():
+    tree = TreeBuilder()
+    assert tree.buildTree([],[])=="This Tree is empty"
