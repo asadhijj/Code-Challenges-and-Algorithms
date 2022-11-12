@@ -4,4 +4,4 @@
 
 ## Here is the White Board for the challenge 
 
-![WhiteBoard CC6](tree challenge 3.jpg)
+![WhiteBoard CC7](treechallenge3.jpg)
